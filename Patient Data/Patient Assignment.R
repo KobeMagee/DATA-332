@@ -79,4 +79,16 @@ ggplot(df_invoice_reason, aes(x = Reason, y = TotalInvoiceAmount, fill = factor(
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 8)) +
   scale_fill_manual(values = c("red", "green"), name = "Invoice Paid")
 
+#Question 5
+monthly_invoice <- final_merged_data %>%
+  group_by(VisitMonth) %>%
+  summarise(TotalInvoiceAmount = sum(InvoiceAmt))
 
+ggplot(monthly_invoice, aes(x = VisitMonth, y = TotalInvoiceAmount)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  geom_text(aes(label = sprintf("$%.2f", TotalInvoiceAmount)), vjust = -0.5, size = 3, color = "black") +
+  labs(title = "Total Invoice Amount by Month",
+       x = "Month",
+       y = "Total Invoice Amount") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 8))
