@@ -50,13 +50,13 @@ clean_complaint_data <- complaint_data %>%
 
 ## Data Analysis
 # Companies with the worst sentiment scores
-<img src="Graphs and Word Cloud/Sentiment Analysis Bottom 20.png" height = 250, width = 400>
+<img src="Graphs and Word Cloud/Sentiment Analysis Bottom 20.png" height = 500, width = 800>
 
 1) Used get_sentiments('afinn') to sum the scores together
 2) Then created this graph showing the 20 companies with the lowest scores
 
 # Equifax NRC
-<img src="Graphs and Word Cloud/Equifax NRC.png" height = 250, width = 400>
+<img src="Graphs and Word Cloud/Equifax NRC.png" height = 600, width = 800>
 
 1) Used get_sentiment('nrc') and filtered it by 'anger'
 2) Then filtered by company and using inner_join to joing nrc_anger
@@ -64,7 +64,7 @@ clean_complaint_data <- complaint_data %>%
 4) Shows that 'dispute' was by ffar the highest word
 
 # Bing Negative
-<img src="Graphs and Word Cloud/Negative Bing.png" height = 250, width = 400>
+<img src="Graphs and Word Cloud/Negative Bing.png" height = 600, width = 800>
 
 1) Used get_sentiments('bing') and filtered it by 'negative'
 2) Inner joined bing_negative with my company_analysis that had each word recorded in the complaints
@@ -72,7 +72,7 @@ clean_complaint_data <- complaint_data %>%
 4) Shows that 'debt' was by far the highest word
 
 # Word Cloud
-<img src="Graphs and Word Cloud/wordcloud.png" height = 250, width = 400>
+<img src="Graphs and Word Cloud/wordcloud.png" height = 400, width = 600>
 
 1) Shows that a majority of the complaints had negative words in them
 
