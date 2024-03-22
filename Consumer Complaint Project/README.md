@@ -63,7 +63,7 @@ clean_complaint_data <- complaint_data %>%
 3) Then created this graph showing the top 5 words for Equifax
 4) Shows that 'dispute' was by ffar the highest word
 
-#3 Bing Negative
+## Bing Negative
 <img src="Graphs and Word Cloud/Negative Bing.png" height = 600, width = 800>
 
 1) Used get_sentiments('bing') and filtered it by 'negative'
@@ -71,7 +71,7 @@ clean_complaint_data <- complaint_data %>%
 3) Then created this graph showing the top 10 words recorded
 4) Shows that 'debt' was by far the highest word
 
-#3 Word Cloud
+## Word Cloud
 <img src="Graphs and Word Cloud/wordcloud.png" height = 400, width = 600>
 
 1) Shows that a majority of the complaints had negative words in them
