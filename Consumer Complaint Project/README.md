@@ -48,14 +48,14 @@ clean_complaint_data <- complaint_data %>%
 | PayPal Holdings, Inc.                   | 5113     | -9475    | -4362  |
 | Select Portfolio Servicing, Inc         | 6246     | -10554   | -4308  |
 
-## Data Analysis
-# Companies with the worst sentiment scores
+# Data Analysis
+## Companies with the worst sentiment scores
 <img src="Graphs and Word Cloud/Sentiment Analysis Bottom 20.png" height = 500, width = 800>
 
 1) Used get_sentiments('afinn') to sum the scores together
 2) Then created this graph showing the 20 companies with the lowest scores
 
-# Equifax NRC
+## Equifax NRC
 <img src="Graphs and Word Cloud/Equifax NRC.png" height = 600, width = 800>
 
 1) Used get_sentiment('nrc') and filtered it by 'anger'
@@ -63,7 +63,7 @@ clean_complaint_data <- complaint_data %>%
 3) Then created this graph showing the top 5 words for Equifax
 4) Shows that 'dispute' was by ffar the highest word
 
-# Bing Negative
+#3 Bing Negative
 <img src="Graphs and Word Cloud/Negative Bing.png" height = 600, width = 800>
 
 1) Used get_sentiments('bing') and filtered it by 'negative'
@@ -71,12 +71,12 @@ clean_complaint_data <- complaint_data %>%
 3) Then created this graph showing the top 10 words recorded
 4) Shows that 'debt' was by far the highest word
 
-# Word Cloud
+#3 Word Cloud
 <img src="Graphs and Word Cloud/wordcloud.png" height = 400, width = 600>
 
 1) Shows that a majority of the complaints had negative words in them
 
-## Conclusion
+# Conclusion
 1) The sentiment analysis shows an overall negative trend towards the companies
 2) Equifax had the worst score at -33,065
 3) 'Debt' was the most recorded word Bing analysis
