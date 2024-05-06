@@ -1,0 +1,13 @@
+name: all_car_data
+title: all_car_data
+username: kobemagee20
+account: kobemagee20
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11863513
+bundleId: 8541172
+url: https://kobemagee20.shinyapps.io/all_car_data/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|Counting Cars Research.docx|counting_cars.R|team_stats_comparison.xlsx
