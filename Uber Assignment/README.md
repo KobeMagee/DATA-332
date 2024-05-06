@@ -9,7 +9,7 @@ https://kobemagee20.shinyapps.io/Uber_Charts/
 ## Steps to Create Graphs
 
 1. **Data Loading and Combining:**
-   - Loaded Uber trip data for the months of April to September 2014 from separate CSV files (`uber-raw-data-apr14.csv`, `uber-raw-data-may14.csv`, etc.).
+   - Loaded Uber trip data for the months of April to September 2014 from separate CSV files.
    - Combined all the individual month datasets into one dataframe (`combined_df`) using the `rbind()` function.
    - ```
      df_apr <- read.csv('uber-raw-data-apr14.csv')
